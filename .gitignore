@@ -1,0 +1,82 @@
+# --- Node Modules ---
+node_modules/
+.pnp/
+.pnp.js
+
+# --- Build Output ---
+dist/
+build/
+out/
+.next/
+.next/cache/
+.vercel/
+.netlify/
+
+# --- Environment Variables ---
+.env
+.env.local
+.env.*.local
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+logs/
+*.log.*
+
+# --- Cache and Temp Files ---
+.cache/
+.temp/
+.vscode-test/
+.DS_Store
+Thumbs.db
+
+# --- Editor / IDE Settings ---
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Dependency and Package Manager Files ---
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --- TypeScript Build Files ---
+*.tsbuildinfo
+*.tscache
+
+# --- Testing / Coverage ---
+coverage/
+*.lcov
+.nyc_output/
+jest/
+
+# --- Storybook ---
+storybook-static/
+
+# --- Linting / Formatting ---
+.eslintcache
+stylelintcache
+.prettier.cache
+
+# --- MacOS Specific ---
+.AppleDouble
+.LSOverride
+._*
+
+# --- Docker / CI/CD ---
+docker-compose.override.yml
+.dockerignore
+
+# --- Miscellaneous ---
+*.bak
+*.swp
+*.swo

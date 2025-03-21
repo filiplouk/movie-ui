@@ -1,9 +1,8 @@
-import Button from "@/@components/Button/Button";
-
+import RouterConfig from "./router";
 function App() {
   return (
     <>
-      <Button>hey</Button>
+      <RouterConfig />
     </>
   );
 }

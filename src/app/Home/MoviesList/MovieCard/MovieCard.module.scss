@@ -1,0 +1,69 @@
+@use "@/@assets/styles/abstracts" as *;
+
+.movieCard {
+  aspect-ratio: 0.7;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  &.embedded {
+    pointer-events: none;
+  }
+
+  &::after {
+    @include afterElement;
+    transition: all $transition-time;
+    background: linear-gradient(
+      to bottom,
+      rgba($black, 0.4) 0%,
+      rgba($black, 0.4) 40%,
+      rgba($black, 0.9) 60%,
+      rgba($black, 1) 100%
+    );
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .cardImage {
+    object-fit: cover;
+  }
+
+  .cardDetails {
+    bottom: 0;
+    gap: 0.4rem;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: all 0.4s;
+    z-index: 2;
+    .title {
+      @include truncate(2);
+    }
+    .basic {
+      gap: 0.5rem;
+    }
+    .overview {
+      color: rgba($white, 0.7);
+      @include truncate(5);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    .genres {
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+      .cardDetails {
+        transform: none;
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+html {
+  font-size: 62.5%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  background-color: $gemstone;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

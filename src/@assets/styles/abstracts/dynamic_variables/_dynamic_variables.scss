@@ -1,0 +1,13 @@
+@use "../../abstracts/" as *;
+:root {
+  --page-padding: 2rem;
+  --page-max: 1800px;
+  --header-max: 1200px;
+}
+
+@media screen and (max-width: $mobile-screen) {
+  :root {
+    --page-max: 40rem;
+    --page-padding: 2rem;
+  }
+}

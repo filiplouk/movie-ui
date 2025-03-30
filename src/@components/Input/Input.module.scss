@@ -1,0 +1,12 @@
+@use "@/@assets/styles/abstracts" as *;
+.input {
+  padding: 0 2rem;
+  height: 3.8rem;
+  border-radius: 5px;
+  border: 2px solid $gemstone;
+
+  &::placeholder {
+    color: $grey !important;
+    font-size: clamp(14px, 1.6rem, 18px);
+  }
+}

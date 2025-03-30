@@ -1,0 +1,22 @@
+@use "@/@assets/styles/abstracts" as *;
+
+.movieDetails {
+  gap: 2rem;
+  .detailsBlock {
+    .title {
+      margin-bottom: 1rem;
+    }
+    .similarMovies {
+      gap: 1rem;
+      .movie {
+        width: calc((100% - 4rem) / 5);
+      }
+    }
+    .reviews {
+      gap: 1.5rem;
+      .author {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

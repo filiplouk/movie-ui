@@ -1,4 +1,5 @@
 import RouterConfig from "./router";
+import "./@assets/styles/main.scss";
 function App() {
   return (
     <>

@@ -1,0 +1,15 @@
+@use "@/@assets/styles/abstracts" as *;
+
+.loader {
+  background-color: $purple;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  animation: pulse 1s infinite linear;
+  .core {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: $white;
+  }
+}

@@ -1,0 +1,78 @@
+@use "../abstracts" as *;
+
+//WEIGHT
+.font-100 {
+  font-weight: 100;
+}
+.font-200 {
+  font-weight: 200;
+}
+.font-300 {
+  font-weight: 300;
+}
+.font-400 {
+  font-weight: 400;
+}
+.font-500 {
+  font-weight: 500;
+}
+.font-600 {
+  font-weight: 600;
+}
+.font-700 {
+  font-weight: 700;
+}
+.font-800 {
+  font-weight: 800;
+}
+.font-900 {
+  font-weight: 900;
+}
+
+//STYLE
+.font-underline {
+  text-decoration: underline;
+}
+
+.font-uppercase {
+  text-transform: uppercase;
+}
+
+.font-capitalize {
+  text-transform: capitalize;
+}
+
+//COLORS
+
+.font-gemstone {
+  color: $gemstone;
+}
+.font-white {
+  color: $white;
+}
+.font-yellow {
+  color: $yellow;
+}
+
+.font-purple {
+  color: $purple;
+}
+
+.font-success {
+  color: $success;
+}
+
+.font-info {
+  color: $info;
+}
+
+.font-error {
+  color: $error;
+}
+
+//ALIGNMENT
+.text-center {
+  text-align: center;
+}
+
+//ANIMATIONS

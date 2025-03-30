@@ -1,0 +1,33 @@
+@mixin afterElement {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+@mixin breakWord($maxWidth: 100%) {
+  max-width: $maxWidth;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+@mixin maxText($maxWidth: 100%) {
+  max-width: $maxWidth;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin truncate($lines: 2) {
+  @include maxText;
+  @supports (-webkit-line-clamp: 2) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: initial;
+  }
+}

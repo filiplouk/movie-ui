@@ -1,0 +1,7 @@
+.moviesList {
+  gap: 2rem;
+  flex-wrap: wrap;
+  .movie {
+    width: calc((100% - 8rem) / 5);
+  }
+}

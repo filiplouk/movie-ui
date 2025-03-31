@@ -47,7 +47,6 @@
     .overview {
       color: rgba($white, 0.7);
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-
       @include truncate(5);
     }
     .genres {

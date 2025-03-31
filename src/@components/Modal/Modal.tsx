@@ -29,7 +29,7 @@ const Modal = ({ open, setOpen, width, children }: ModalProps) => {
         >
           <div
             className={`${classes.modalContent} bg-white d-flex flex-column align-end`}
-            style={{ width: width }}
+            style={{ width: `min(${width}, 90%)` }}
           >
             <a type="button" onClick={closeModal}>
               <Icon path={mdiClose} size="3rem" />

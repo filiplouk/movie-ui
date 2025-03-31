@@ -1,7 +1,27 @@
+@use "@/@assets/styles/abstracts" as *;
+
 .moviesList {
   gap: 2rem;
   flex-wrap: wrap;
   .movie {
     width: calc((100% - 8rem) / 5);
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .moviesList {
+    gap: 1rem;
+
+    .movie {
+      width: calc((100% - 3rem) / 4);
+    }
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .moviesList {
+    .movie {
+      width: calc((100% - 1rem) / 2);
+    }
   }
 }

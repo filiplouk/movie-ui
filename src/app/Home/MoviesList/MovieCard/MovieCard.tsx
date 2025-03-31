@@ -5,6 +5,7 @@ import placeholder from "@/@assets/images/placeholder.jpg";
 import Badge from "@/@components/Badge/Badge";
 import { Genre } from "@/@services/Movie/@dtos/Genre.dto";
 import MovieDialog from "../MovieDialog/MovieDialog";
+import { toDate } from "@/@utils/Filters";
 
 type MovieCardProps = {
   movie: Partial<Movie>;
@@ -55,7 +56,7 @@ const MovieCard = ({ movie, genres, embedded = false }: MovieCardProps) => {
           </h3>
 
           <div className={`${classes.basic} text-14 d-flex`}>
-            <span className="font-yellow">{movie.release_date}</span>
+            <span className="font-yellow">{toDate(movie.release_date)}</span>
             <span className="font-white">/</span>
             <span className={`${ratingColor}`}>
               {movieRating > 0 ? movieRating : "-"}
@@ -64,11 +65,7 @@ const MovieCard = ({ movie, genres, embedded = false }: MovieCardProps) => {
 
           <div className={`${classes.genres} text-14 font-purple d-flex`}>
             {movieGenres.map((genre, index) => {
-              return (
-                <>
-                  <Badge key={index}>{genre.name}</Badge>
-                </>
-              );
+              return <Badge key={genre.id}>{genre.name}</Badge>;
             })}
           </div>
 

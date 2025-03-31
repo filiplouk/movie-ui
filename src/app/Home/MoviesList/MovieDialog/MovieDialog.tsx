@@ -56,7 +56,7 @@ const MovieDialog = ({ open, setOpen, id, genres }: MovieDialogProps) => {
                   {reviews?.length ? (
                     reviews.slice(0, 2).map((review: Review, index: number) => {
                       return (
-                        <div className={`${classes.review}`}>
+                        <div className={`${classes.review}`} key={review.id}>
                           <p className={`${classes.author} text-16`}>
                             {review.author}
                           </p>
@@ -79,7 +79,7 @@ const MovieDialog = ({ open, setOpen, id, genres }: MovieDialogProps) => {
                       .slice(0, 5)
                       .map((movie: Movie, index: number) => {
                         return (
-                          <div className={`${classes.movie}`}>
+                          <div className={`${classes.movie}`} key={movie.id}>
                             <MovieCard embedded movie={movie} genres={genres} />
                           </div>
                         );

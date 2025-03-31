@@ -13,11 +13,9 @@ const MoviesList = ({ movies, genres }: MoviesListProps) => {
     <div className={`${classes.moviesList} d-flex`}>
       {movies.map((movie, index) => {
         return (
-          <>
-            <div className={`${classes.movie} d-flex flex-column`} key={index}>
-              <MovieCard movie={movie} genres={genres} />
-            </div>
-          </>
+          <div className={`${classes.movie} d-flex flex-column`} key={movie.id}>
+            <MovieCard movie={movie} genres={genres} />
+          </div>
         );
       })}
     </div>

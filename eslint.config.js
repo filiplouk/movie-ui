@@ -11,11 +11,15 @@ export default tseslint.config(
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        "vitest/globals": true,
+      },
     },
     plugins: {
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
+      "vitest-globals": "off",
     },
     rules: {
       ...reactHooks.configs.recommended.rules,

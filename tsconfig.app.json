@@ -26,6 +26,8 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     // "noUncheckedSideEffectImports": true
+    "types": ["vitest/globals", "vite/client"], 
+
   },
-  "include": ["src"]
+  "include": ["src", "env.d.ts"]
 }

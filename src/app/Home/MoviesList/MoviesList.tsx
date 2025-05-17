@@ -10,7 +10,7 @@ type MoviesListProps = {
 
 const MoviesList = ({ movies, genres }: MoviesListProps) => {
   return (
-    <div className={`${classes.moviesList} d-flex`}>
+    <div id="movies-list" className={`${classes.moviesList} d-flex`}>
       {movies.map((movie, index) => {
         return (
           <div className={`${classes.movie} d-flex flex-column`} key={movie.id}>
